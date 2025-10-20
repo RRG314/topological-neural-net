@@ -1,4 +1,4 @@
-🧠 Topological Neural Network (TNN) with MHD Closure
+Topological Neural Network (TNN) with MHD Closure
 
 Author: Steven Reid | Version: 1.0 | Framework: PyTorch | License: MIT
 
@@ -8,7 +8,7 @@ Instead of optimizing weights in isolation, the TNN maintains internal energetic
 Designed for research and experimentation, this repository provides a stand-alone PyTorch implementation that can be dropped into any workflow as a plug-and-play model or extended into new architectures.
 It’s simple enough for direct use in Jupyter notebooks, yet expressive enough to explore topological dynamics, stability metrics, and field-based learning across any dataset.
 
-⚡ Core Dynamics: Energy–Coupling–Stability (E-C-S)
+Core Dynamics: Energy–Coupling–Stability (E-C-S)
 
 Every forward pass in the Topological Neural Network maintains a field-based equilibrium between three physical quantities:
 
@@ -175,7 +175,7 @@ It creates a bridge between numerical learning and physical law, offering new di
 
 ---
 
-## 🧩 Customization
+Customization
 
 | Parameter     | Default | Meaning                                   |
 | :------------ | :-----: | :---------------------------------------- |
@@ -192,7 +192,7 @@ You can freely extend it:
 
 ---
 
-## 📚 Citing This Work
+Citing This Work
 
 If you use this model or its physics concepts in research, please cite:
 
@@ -200,7 +200,7 @@ If you use this model or its physics concepts in research, please cite:
 
 ---
 
-## 🧭 Roadmap
+ Roadmap
 
 * [ ] GPU-optimized curvature kernels
 * [ ] 2-D/3-D convolutional TNN layers
@@ -209,7 +209,7 @@ If you use this model or its physics concepts in research, please cite:
 
 ---
 
-## 🧠 Philosophy
+ Philosophy
 
 The TNN is designed not just as a model, but as an experiment in **field-driven intelligence** — an attempt to make neural learning follow the same conservation laws that govern physical systems.
 Where ordinary networks “learn patterns,” a TNN *balances forces*.
