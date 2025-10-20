@@ -1,15 +1,53 @@
+🧠 Topological Neural Network (TNN) with MHD Closure
+
+Author: Steven Reid | Version: 1.0 | Framework: PyTorch | License: MIT
+
 Topological Neural Network (TNN) is a physics-inspired deep learning framework that unifies neural computation with the laws of energy conservation and magnetohydrodynamic (MHD) field closure.
 Instead of optimizing weights in isolation, the TNN maintains internal energetic balance between activation energy and field coupling — creating self-stabilizing learning dynamics that behave more like a physical system than a traditional neural net.
 
 Designed for research and experimentation, this repository provides a stand-alone PyTorch implementation that can be dropped into any workflow as a plug-and-play model or extended into new architectures.
 It’s simple enough for direct use in Jupyter notebooks, yet expressive enough to explore topological dynamics, stability metrics, and field-based learning across any dataset.
 
+⚡ Core Dynamics: Energy–Coupling–Stability (E-C-S)
 
- Topological Neural Network (TNN) with MHD Closure
+Every forward pass in the Topological Neural Network maintains a field-based equilibrium between three physical quantities:
 
-**Author:** Steven Reid
-**Version:** 1.0 | **Framework:** PyTorch | **License:** MIT
+Symbol	Name	Role in the System
+E	Energy	Mean squared activation magnitude. Represents total internal field energy.
+C	Coupling	Divergence of activation gradients. Captures magnetic or topological interactions between neurons.
+S	Stability	Absolute difference |E − C|. Quantifies energetic balance — lower values indicate topological closure and self-stabilizing behavior.
 
+During training, the model continuously adjusts activations to minimize S → 0, achieving MHD closure, where
+
+𝐸
+≈
+𝐶
+and
+𝑑
+𝐸
+𝑑
+𝑡
+=
+−
+𝑑
+𝐶
+𝑑
+𝑡
+.
+E≈Cand
+dt
+dE
+	​
+
+=−
+dt
+dC
+	​
+
+.
+
+This dynamic ensures the network functions as a conservative field system, maintaining equilibrium between stored and transferred energy.
+In practice, it improves convergence smoothness, suppresses gradient explosions, and enables highly stable learning without batch normalization or clipping.
 ---
 
 ## Overview
