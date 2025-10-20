@@ -1,10 +1,8 @@
-# topological-neural-net
-A physics-inspired deep learning architecture unifying topology, energy balance, and MagnetoHydro-Dynamics.
-Perfect. Since this is a **novel research-grade model**, you’ll want a README that does *three* things simultaneously:
-1️⃣ explains what the Topological Neural Network (TNN) actually is,
-2️⃣ documents how to use it (so any ML engineer can immediately integrate it), and
-3️⃣ establishes credibility and originality for a GitHub or publication audience.
+Topological Neural Network (TNN) is a physics-inspired deep learning framework that unifies neural computation with the laws of energy conservation and magnetohydrodynamic (MHD) field closure.
+Instead of optimizing weights in isolation, the TNN maintains internal energetic balance between activation energy and field coupling — creating self-stabilizing learning dynamics that behave more like a physical system than a traditional neural net.
 
+Designed for research and experimentation, this repository provides a stand-alone PyTorch implementation that can be dropped into any workflow as a plug-and-play model or extended into new architectures.
+It’s simple enough for direct use in Jupyter notebooks, yet expressive enough to explore topological dynamics, stability metrics, and field-based learning across any dataset.
 
 
  Topological Neural Network (TNN) with MHD Closure
@@ -26,7 +24,7 @@ This implementation is the first **stand-alone open-source release** of the mode
 
 ---
 
-## ⚙️ Key Concepts
+ Key Concepts
 
 | Term              | Description                                                                                   |       |                                              |
 | :---------------- | :-------------------------------------------------------------------------------------------- | ----- | -------------------------------------------- |
@@ -40,7 +38,7 @@ In experiments, this produces smooth convergence and stable learning without bat
 
 ---
 
-## 🧮 Architecture Summary
+ Architecture Summary
 
 ```
 Input  →  Linear(784→512)  →  ReLU
@@ -55,17 +53,17 @@ where λ controls topological feedback strength (`lambda_topo` parameter).
 
 ---
 
-## 🧰 Installation
+ Installation
 
 ```bash
-git clone https://github.com/<your-username>/topological-nn.git
+git clone https://github.com/<RRG314>/topological-neural-net.git
 cd topological-nn
 pip install torch matplotlib
 ```
 
 ---
 
-## 🧑‍💻 Usage
+ Usage
 
 ```python
 from topological_nn import TopologicalNeuralNetwork
@@ -92,11 +90,11 @@ loss.backward()
 optimizer.step()
 ```
 
-Because it’s completely **dataset-agnostic**, you can plug any tensor input into it — tabular, vision, or sequence embeddings — and the topological terms will self-adjust.
+Because it’s completely dataset-agnostic, you can plug any tensor input into it — tabular, vision, or sequence embeddings — and the topological terms will self-adjust.
 
 ---
 
-## 📊 Outputs & Diagnostics
+ Outputs & Diagnostics
 
 Every forward pass computes three values:
 
