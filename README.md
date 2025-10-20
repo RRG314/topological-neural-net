@@ -36,10 +36,7 @@ and
 .
 E≈Cand
 dt
-dE
-	​
-
-=−
+dE=−
 dt
 dC
 	​
