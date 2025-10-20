@@ -13,7 +13,7 @@ It’s simple enough for direct use in Jupyter notebooks, yet expressive enough 
 Every forward pass in the Topological Neural Network maintains a field-based equilibrium between three physical quantities:
 
 Symbol	Name	Role in the System
-E	Energy	Mean squared activation magnitude. Represents total internal field energy.
+E	Energy	   Mean squared activation magnitude. Represents total internal field energy.
 C	Coupling	Divergence of activation gradients. Captures magnetic or topological interactions between neurons.
 S	Stability	Absolute difference |E − C|. Quantifies energetic balance — lower values indicate topological closure and self-stabilizing behavior.
 
